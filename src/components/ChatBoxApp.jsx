@@ -1,7 +1,7 @@
 import React from 'react';
 import './ChatBotApp.css';
 
-const ChatBoxApp = () => {
+const ChatBoxApp = ({onGoBack}) => {
   return (
     <div className='chat-app'>
         <div className="chat-list">
@@ -25,7 +25,7 @@ const ChatBoxApp = () => {
         <div className="chat-window">
             <div className="chat-title">
                 <h3>Chat with AI</h3>
-                <i class='bx bx-arrow-back'></i>
+                <i class='bx bx-arrow-back' onClick={onGoBack}></i>
             </div>
             <div className="chat">
                 <div className="prompt">
