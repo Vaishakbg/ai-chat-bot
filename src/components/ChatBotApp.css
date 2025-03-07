@@ -39,7 +39,7 @@
 }
 
 .chat-list-item.active {
-    background: linear-gradient(135deg, #f42f5f, #8e25bf);
+    background: linear-gradient(135deg, #00aff0, #0078d7);
 }
 
 .chat-list-item h4 {
@@ -52,7 +52,7 @@
 }
 
 .chat-list-item i {
-    color: #f42f5f;
+    color: #fff;
     font-size: 2.5rem;
 }
 
@@ -96,31 +96,42 @@
 }
 .prompt,.response {
     max-width: 80%;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     font-size: 1.6rem;
     color: #fff;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+    position: relative;
 }
 
 .prompt {
-    background: linear-gradient(135deg, #f42f5f, #8e25bf);
+    background: linear-gradient(135deg, #00aff0, #0078d7);
     align-self: flex-end;
-    border-radius: 3rem 3rem 0 3rem;
+    border-radius: 2rem 2rem 0 2rem;
     text-align: right;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2), 0 0.2rem 0.5rem rgba(0, 0, 0, .1);
 }
 
 .response {
-    background: linear-gradient(135deg, #fe8d5c, #fe4d57);
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
     align-self: flex-start;
-    border-radius: 3rem 3rem 3rem 0;
+    border-radius: 2rem 2rem 2rem 0;
     text-align: left;
+    color: #161c2c;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2), 0 0.2rem 0.5rem rgba(0, 0, 0, .1);
 }
 
 .prompt span,.response span {    
-    font-family: 'exo 2', sans-serif;
-    font-size: 1.4rem;
-    display: block;
-    margin-top: .5rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: -16px;
+}
+.prompt span {
+    right: .1rem;
+}
+.response span {    
+    left: .1rem;
+    right: unset;
+    color: #fff;
 }
 
 .typing {
