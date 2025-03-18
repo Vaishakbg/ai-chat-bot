@@ -27,6 +27,9 @@
     font-size: 2rem;
     text-transform: uppercase;
 }
+.chat-list-header .new-chat{
+    font-size: 2rem;
+}
 .chat-list-item {
     width: 100%;
     height: 6rem;
@@ -96,6 +99,7 @@
 }
 .prompt,.response {
     max-width: 80%;
+    min-width: 60px;
     padding: 1.5rem 2rem;
     font-size: 1.6rem;
     color: #fff;
@@ -180,4 +184,11 @@
 
 .msg-input:focus::placeholder {
     opacity: 0;
+}
+.bx-x-circle {
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+.bx-x-circle:hover {
+    transform: scale(1.1);
 }
