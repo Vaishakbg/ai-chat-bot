@@ -11,7 +11,7 @@ const App = () => {
 
     if (chats.length === 0) {
       const newChat = {
-        id: `Chat ${new Date().toLocaleString("en-GB")} ${new Date().toLocaleTimeString()}`,
+        id: `Chat ${new Date().toLocaleDateString("en-GB")} ${new Date().toLocaleTimeString()}`,
         messages: [],
       }
       setChats([newChat])
